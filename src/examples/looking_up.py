@@ -14,6 +14,6 @@ class CustomSnek(Snek):
     def get_next_action(self) -> Action:
         if self.look(Direction.UP) < 20:
             return Action.RIGHT
-        elif self.get_bearing().right != 0:
+        elif self.get_bearing().x != 0:
             return Action.LEFT
         return Action.UP

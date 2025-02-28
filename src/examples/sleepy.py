@@ -16,13 +16,13 @@ class CustomSnek(Snek):
                 return direction.get_opposite().get_action()
 
         # get back to not moving
-        if self.get_bearing().right > 0:
+        if self.get_bearing().x > 0:
             return Action.LEFT
-        elif self.get_bearing().right < 0:
+        elif self.get_bearing().x < 0:
             return Action.RIGHT
-        elif self.get_bearing().up > 0:
+        elif self.get_bearing().y > 0:
             return Action.DOWN
-        elif self.get_bearing().up < 0:
+        elif self.get_bearing().y < 0:
             return Action.UP
         else:
             return Action.MAINTAIN
