@@ -21,7 +21,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "space-sneks>=1.0.5",
+    "space-sneks>=1.0.6",
 ]
 
 [project.scripts]
